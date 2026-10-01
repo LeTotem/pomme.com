@@ -1,0 +1,102 @@
+body{
+    background-image: url(../images/apple_tiling.webp);
+}
+header{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+header div{
+    background-color: red;
+    border-radius: 25px;
+    width:fit-content;
+    padding:20px;
+    color:white;
+    border: solid 10px;
+    text-align: center;
+}
+
+
+section, article {
+    background-color: pink;
+    margin: 20px;
+    padding: 15px;
+    border-radius: 20px;
+}
+table, th, td{
+    border: solid 2px black;
+    border-collapse: collapse;
+}
+table{
+    caption-side: bottom;
+}
+caption{
+    font-style: italic;
+}
+td,th{
+    padding:5px;
+}
+table{
+    width: 100%;
+    border-width: 4px;
+}
+tbody tr:hover{
+    background-color: coral;
+    transform: scale(1.05,1.05) rotateX(360deg);
+}
+thead tr{
+    background-color: white;
+}
+tr{
+    background-color: darkgray;
+    transition: 1s;
+}
+tr:nth-child(even){
+    background-color:gray;
+}
+
+span{
+    color:blue;
+}
+
+section h3{
+    animation-name: bounceAnimation;
+  animation-duration: 0.25s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+  animation-fill-mode: both;
+  text-align: center;
+  width: fit-content;
+}
+
+@keyframes bounceAnimation {
+  0%, 100% { transform: rotate(-5deg) scale(1,1);
+            color:red; }
+  50% { transform: rotate(5deg) scale(1.2,1.2);
+            color:green; }
+}
+
+@keyframes destroyAnimation {
+    0%, 100% {
+        filter: blur(0px);
+    }
+    50% {
+        filter: blur(100px) opacity(0);
+    }
+}
+
+.cool_apple_image {
+    width:500px;
+    height: 500px;
+    object-fit: cover;
+    display:block;
+    margin: auto;
+    border-radius: 100%;
+    border: solid 2px black;
+    background-image:url(../images/apple_tiling.webp);
+}
+.vip_title {
+    font-style: italic;
+    text-align: center;
+}
